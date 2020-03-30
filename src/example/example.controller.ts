@@ -11,7 +11,7 @@ import {
 import { ExampleService } from './example.service';
 import { ExampleEntity } from './example.entity';
 
-@Controller('example')
+@Controller('examples')
 export class ExampleController {
   constructor(private exampleService: ExampleService) {}
 
@@ -22,6 +22,7 @@ export class ExampleController {
 
   @Get()
   findAll(@Query() query: ExampleEntity[]) {
+    console.log('hi')
     return `This action returns all cats (limit: ${query.length} items)`;
   }
 
