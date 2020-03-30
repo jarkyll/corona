@@ -11,7 +11,7 @@ import {
 import { ExampleService } from './example.service';
 import { ExampleEntity } from './example.entity';
 
-@Controller('examples')
+@Controller('example')
 export class ExampleController {
   constructor(private exampleService: ExampleService) {}
 
